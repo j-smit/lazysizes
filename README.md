@@ -457,14 +457,13 @@ For flexible responsive images the [CSS intrinsic ratio scaling technique](http:
 .ratio-container {
     position: relative;
 }
-.ratio-container:after {
+.ratio-container::after {
     content: '';
     display: block;
     height: 0;
     width: 100%;
     /* 16:9 = 56.25% = calc(9 / 16 * 100%) */
     padding-bottom: 42.86%;
-    content: "";
 }
 .ratio-container > * {
     position: absolute;
